@@ -119,31 +119,31 @@ export class RouInitialDirectCostUpdateComponent implements OnInit {
     }
   }
 
-  updatePlaceholders($event: IPlaceholder[]) {
+  updatePlaceholders($event: IPlaceholder[]): void {
     this.editForm.patchValue({
       placeholders: [...$event]
     })
   }
 
-  transferAccount($event: ITransactionAccount) {
+  transferAccount($event: ITransactionAccount): void{
     this.editForm.patchValue({
       transferAccount: $event
     })
   }
 
-  targetROUAccount($event: ITransactionAccount) {
+  targetROUAccount($event: ITransactionAccount): void {
     this.editForm.patchValue({
       targetROUAccount: $event
     })
   }
 
-  settlementDetails($event: ISettlement) {
+  settlementDetails($event: ISettlement): void {
     this.editForm.patchValue({
       settlementDetails: $event
     })
   }
 
-  leaseContract($event: IIFRS16LeaseContract) {
+  leaseContract($event: IIFRS16LeaseContract): void {
     this.editForm.patchValue({
       leaseContract: $event
     })
